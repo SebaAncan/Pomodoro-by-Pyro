@@ -1,7 +1,7 @@
 extends Node2D
 @onready var temporizador = $Timer
 @onready var timerset = $timersets
-
+var total
 func _ready() -> void:
 	optener_sacro_tiempo()
 
@@ -12,11 +12,13 @@ func optener_sacro_tiempo():
 	print(horas)
 	print(minutos)
 	print(segundos)
-	var total = horas * 3600 + minutos * 60 + segundos
+	total = horas * 3600 + minutos * 60 + segundos
 	temporizador.tempo.wait_time = total
 	return total
 	
 
 
 func _on_inicio_pressed():
+	optener_sacro_tiempo()
+	print(total)
 	temporizador.tempo.start()

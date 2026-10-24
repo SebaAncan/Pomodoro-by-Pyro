@@ -1,16 +1,16 @@
 extends Node
-@export var timer: Node
+
 @onready var label: Label = $numeritos
 @export var tiempo_en_segundos: float
 @export var tiempo_en_minutos:float
 @export var tiempo_en_horas:float
 var tiempo_aux:float = 0
-@export var tempo: Timer
+@onready var tempo: Timer = $tiempo
 
 func Tiempo_existir():
-	var tiempo_restante = tempo.time_left
+	var tiempo_restante = int(tempo.time_left)
 	var hora = floor(tiempo_restante/3600)
-	var minuto = floor((tiempo_restante / 3600))
+	var minuto = ((tiempo_restante % 3600) / 60)
 	var segundo = int(tiempo_restante)%60
 	return [hora,minuto,segundo]
 	
