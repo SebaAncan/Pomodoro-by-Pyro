@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://doljrftqg3soc"]
+
+[ext_resource type="PackedScene" uid="uid://cy7qq7j1om41x" path="res://scenes/timer.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://cle6chi8fmo0v" path="res://scenes/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dqij003d2nwqe" path="res://scenes/timersets.tscn" id="2_0wfyh"]
+
+[node name="Contador" type="Node2D" unique_id=706200795]
+script = ExtResource("1_sugp2")
+
+[node name="Timer" parent="." unique_id=751466406 instance=ExtResource("1_o5qli")]
+
+[node name="timersets" parent="." unique_id=475916094 node_paths=PackedStringArray("timersets") instance=ExtResource("2_0wfyh")]
+timersets = NodePath(".")
+
+[node name="inicio" type="Button" parent="." unique_id=1040231152]
+offset_left = 407.0
+offset_top = 525.0
+offset_right = 730.0
+offset_bottom = 637.0
+text = "Estart"
+
+[connection signal="pressed" from="inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="inicio" to="." method="_on_button_pressed"]

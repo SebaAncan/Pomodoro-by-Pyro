@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dqij003d2nwqe"]
+
+[ext_resource type="Script" uid="uid://bi6axgmbl8ity" path="res://scenes/timersets.gd" id="1_8o2jh"]
+
+[node name="timersets" type="Node" unique_id=475916094 node_paths=PackedStringArray("horero", "minutero", "secondero")]
+script = ExtResource("1_8o2jh")
+horero = NodePath("Teclados/horero")
+minutero = NodePath("Teclados/minutero")
+secondero = NodePath("Teclados/secondero")
+
+[node name="Label" type="Label" parent="." unique_id=2121431994]
+offset_left = 514.0
+offset_top = 16.0
+offset_right = 736.0
+offset_bottom = 39.0
+text = "Ingrese Tiempo"
+
+[node name="Teclados" type="CanvasLayer" parent="." unique_id=1506004413]
+
+[node name="horero" type="LineEdit" parent="Teclados" unique_id=1387963046]
+offset_left = 76.0
+offset_top = 281.0
+offset_right = 316.0
+offset_bottom = 398.0
+text = "horero"
+placeholder_text = "00"
+alignment = 1
+virtual_keyboard_type = 2
+
+[node name="minutero" type="LineEdit" parent="Teclados" unique_id=456154944]
+offset_left = 441.0
+offset_top = 281.0
+offset_right = 678.0
+offset_bottom = 398.0
+text = "minutero"
+placeholder_text = "00"
+alignment = 1
+virtual_keyboard_type = 2
+
+[node name="secondero" type="LineEdit" parent="Teclados" unique_id=1764416665]
+offset_left = 751.0
+offset_top = 275.0
+offset_right = 1008.0
+offset_bottom = 393.0
+text = "secondero"
+placeholder_text = "00"
+alignment = 1
+virtual_keyboard_type = 2
+
+[node name="Botones" type="CanvasLayer" parent="." unique_id=1104673228]
+
+[node name="more" type="CanvasLayer" parent="Botones" unique_id=669595624]
+
+[node name="mas_segundo" type="Button" parent="Botones/more" unique_id=1013681735]
+offset_left = 841.0
+offset_top = 186.0
+offset_right = 921.0
+offset_bottom = 264.0
+text = "+"
+
+[node name="mas_minuto" type="Button" parent="Botones/more" unique_id=586076487]
+offset_left = 518.0
+offset_top = 184.0
+offset_right = 596.0
+offset_bottom = 253.0
+text = "+"
+
+[node name="mas_hora" type="Button" parent="Botones/more" unique_id=830785213]
+offset_left = 162.0
+offset_top = 188.0
+offset_right = 245.0
+offset_bottom = 260.0
+text = "+"
+
+[node name="minus" type="CanvasLayer" parent="Botones" unique_id=696817797]
+
+[node name="menos_segundo" type="Button" parent="Botones/minus" unique_id=1209825124]
+offset_left = 843.0
+offset_top = 413.0
+offset_right = 926.0
+offset_bottom = 498.0
+text = "-"
+
+[node name="menos_minuto" type="Button" parent="Botones/minus" unique_id=45123394]
+offset_left = 501.0
+offset_top = 420.0
+offset_right = 589.0
+offset_bottom = 501.0
+text = "-"
+
+[node name="menos_hora" type="Button" parent="Botones/minus" unique_id=1970796882]
+offset_left = 159.0
+offset_top = 429.0
+offset_right = 257.0
+offset_bottom = 522.0
+text = "-"
+
+[connection signal="pressed" from="Botones/more/mas_segundo" to="." method="_on_mas_segundo_pressed"]
+[connection signal="pressed" from="Botones/more/mas_minuto" to="." method="_on_mas_minuto_pressed"]
+[connection signal="pressed" from="Botones/more/mas_hora" to="." method="_on_mas_hora_pressed"]
+[connection signal="pressed" from="Botones/minus/menos_segundo" to="." method="_on_menos_segundo_pressed"]
+[connection signal="pressed" from="Botones/minus/menos_minuto" to="." method="_on_menos_minuto_pressed"]
+[connection signal="pressed" from="Botones/minus/menos_hora" to="." method="_on_menos_hora_pressed"]
