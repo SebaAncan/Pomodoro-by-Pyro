@@ -9,6 +9,8 @@ func optener_sacro_tiempo():
 	var horas = timerset.fixnumero(timerset.horero.text)
 	var minutos = timerset.fixnumero(timerset.minutero.text)
 	var segundos = timerset.fixnumero(timerset.secondero.text)
+	var minuto_descanso = timerset.fixnumero(timerset.minuto_descanso.text)
+	var minuto_des = timerset.fixnumero(timerset.minuto_estudio)
 	print(horas)
 	print(minutos)
 	print(segundos)

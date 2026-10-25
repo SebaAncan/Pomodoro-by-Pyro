@@ -16,11 +16,11 @@ tiempo_en_horas = 0.0
 timersets = NodePath(".")
 
 [node name="inicio" type="Button" parent="." unique_id=1040231152]
-offset_left = 407.0
-offset_top = 525.0
-offset_right = 730.0
-offset_bottom = 637.0
+offset_left = 416.0
+offset_top = 520.0
+offset_right = 739.0
+offset_bottom = 632.0
 text = "Estart"
 
-[connection signal="pressed" from="inicio" to="." method="_on_inicio_pressed"]
 [connection signal="pressed" from="inicio" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="inicio" to="." method="_on_inicio_pressed"]

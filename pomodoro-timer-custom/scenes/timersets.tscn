@@ -18,30 +18,50 @@ text = "Ingrese Tiempo"
 [node name="Teclados" type="CanvasLayer" parent="." unique_id=1506004413]
 
 [node name="horero" type="LineEdit" parent="Teclados" unique_id=1387963046]
-offset_left = 76.0
-offset_top = 281.0
-offset_right = 316.0
-offset_bottom = 398.0
+offset_left = 11.0
+offset_top = 278.0
+offset_right = 251.0
+offset_bottom = 395.0
 text = "horero"
 placeholder_text = "00"
 alignment = 1
 virtual_keyboard_type = 2
 
 [node name="minutero" type="LineEdit" parent="Teclados" unique_id=456154944]
-offset_left = 441.0
-offset_top = 281.0
-offset_right = 678.0
-offset_bottom = 398.0
+offset_left = 284.0
+offset_top = 279.0
+offset_right = 521.0
+offset_bottom = 396.0
 text = "minutero"
 placeholder_text = "00"
 alignment = 1
 virtual_keyboard_type = 2
 
+[node name="minuto_estudio" type="LineEdit" parent="Teclados" unique_id=785473438]
+offset_left = 860.0
+offset_top = 156.0
+offset_right = 1117.0
+offset_bottom = 274.0
+text = "Minutos de Estudio"
+placeholder_text = "00"
+alignment = 1
+virtual_keyboard_type = 2
+
+[node name="minuto_descanso" type="LineEdit" parent="Teclados" unique_id=1064930497]
+offset_left = 859.0
+offset_top = 417.0
+offset_right = 1116.0
+offset_bottom = 535.0
+text = "Minutos de Descanso"
+placeholder_text = "00"
+alignment = 1
+virtual_keyboard_type = 2
+
 [node name="secondero" type="LineEdit" parent="Teclados" unique_id=1764416665]
-offset_left = 751.0
-offset_top = 275.0
-offset_right = 1008.0
-offset_bottom = 393.0
+offset_left = 537.0
+offset_top = 281.0
+offset_right = 794.0
+offset_bottom = 399.0
 text = "secondero"
 placeholder_text = "00"
 alignment = 1
@@ -52,47 +72,47 @@ virtual_keyboard_type = 2
 [node name="more" type="CanvasLayer" parent="Botones" unique_id=669595624]
 
 [node name="mas_segundo" type="Button" parent="Botones/more" unique_id=1013681735]
-offset_left = 841.0
-offset_top = 186.0
-offset_right = 921.0
-offset_bottom = 264.0
+offset_left = 634.0
+offset_top = 193.0
+offset_right = 714.0
+offset_bottom = 271.0
 text = "+"
 
 [node name="mas_minuto" type="Button" parent="Botones/more" unique_id=586076487]
-offset_left = 518.0
-offset_top = 184.0
-offset_right = 596.0
-offset_bottom = 253.0
+offset_left = 372.0
+offset_top = 190.0
+offset_right = 450.0
+offset_bottom = 259.0
 text = "+"
 
 [node name="mas_hora" type="Button" parent="Botones/more" unique_id=830785213]
-offset_left = 162.0
-offset_top = 188.0
-offset_right = 245.0
-offset_bottom = 260.0
+offset_left = 94.0
+offset_top = 198.0
+offset_right = 177.0
+offset_bottom = 270.0
 text = "+"
 
 [node name="minus" type="CanvasLayer" parent="Botones" unique_id=696817797]
 
 [node name="menos_segundo" type="Button" parent="Botones/minus" unique_id=1209825124]
-offset_left = 843.0
-offset_top = 413.0
-offset_right = 926.0
-offset_bottom = 498.0
+offset_left = 625.0
+offset_top = 419.0
+offset_right = 708.0
+offset_bottom = 504.0
 text = "-"
 
 [node name="menos_minuto" type="Button" parent="Botones/minus" unique_id=45123394]
-offset_left = 501.0
-offset_top = 420.0
-offset_right = 589.0
-offset_bottom = 501.0
+offset_left = 365.0
+offset_top = 406.0
+offset_right = 453.0
+offset_bottom = 487.0
 text = "-"
 
 [node name="menos_hora" type="Button" parent="Botones/minus" unique_id=1970796882]
-offset_left = 159.0
-offset_top = 429.0
-offset_right = 257.0
-offset_bottom = 522.0
+offset_left = 79.0
+offset_top = 405.0
+offset_right = 177.0
+offset_bottom = 498.0
 text = "-"
 
 [connection signal="pressed" from="Botones/more/mas_segundo" to="." method="_on_mas_segundo_pressed"]

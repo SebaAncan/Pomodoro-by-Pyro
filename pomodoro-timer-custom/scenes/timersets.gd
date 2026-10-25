@@ -8,6 +8,10 @@ extends Node
 @onready var mas_hora: Button = $Botones/more/mas_hora
 @onready var menos_minuto: Button = $Botones/minus/menos_minuto
 @onready var menos_hora: Button = $Botones/minus/menos_hora
+@onready var minuto_estudio:LineEdit = $Teclados/minuto_estudio
+@onready var minuto_descanso: LineEdit = $Teclados/minuto_descanso
+
+
 signal cambio
 
 func _ready():
