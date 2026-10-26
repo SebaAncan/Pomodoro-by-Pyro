@@ -36,7 +36,7 @@ func _on_inicio_pressed() -> void:
 		temporizador.modo_actual = temporizador.modo.ESTUDIO
 		temporizador.tempo.wait_time = temporizador.tiempo_estudio
 	temporizador.iniciar()
-
+	#funciona carajo
 var cambio:bool = true
 func _on_check_button_pressed() -> void:
 	cambio = !cambio
