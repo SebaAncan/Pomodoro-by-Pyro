@@ -19,5 +19,13 @@ offset_right = 739.0
 offset_bottom = 632.0
 text = "Estart"
 
+[node name="CheckButton" type="CheckButton" parent="." unique_id=1328914734]
+offset_left = 28.0
+offset_top = 56.0
+offset_right = 191.0
+offset_bottom = 87.0
+text = "Estudio o Total"
+
 [connection signal="pressed" from="inicio" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
