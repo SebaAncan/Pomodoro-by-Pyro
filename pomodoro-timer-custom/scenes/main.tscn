@@ -8,9 +8,6 @@
 script = ExtResource("1_sugp2")
 
 [node name="Timer" parent="." unique_id=751466406 instance=ExtResource("1_o5qli")]
-tiempo_en_segundos = 0.0
-tiempo_en_minutos = 0.0
-tiempo_en_horas = 0.0
 
 [node name="timersets" parent="." unique_id=475916094 node_paths=PackedStringArray("timersets") instance=ExtResource("2_0wfyh")]
 timersets = NodePath(".")

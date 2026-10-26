@@ -4,9 +4,6 @@
 
 [node name="Timer" type="Node" unique_id=751466406]
 script = ExtResource("1_srplv")
-tiempo_en_segundos = null
-tiempo_en_minutos = null
-tiempo_en_horas = null
 
 [node name="numeritos" type="Label" parent="." unique_id=506549429]
 anchors_preset = -1
